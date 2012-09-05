@@ -17,7 +17,7 @@ package robotlegs.bender.example.simpleaway3d.views
 		override public function destroy():void
 		{
 			removeViewListener(SampleViewEvent.VIEW_TRIGGERED, handleTriggered, SampleViewEvent);
-			removeContextListener(SampleEvent.UPDATE_COLOR, onUpdateColor);
+			removeContextListener(SampleEvent.UPDATE_COLOR, onUpdateColor, SampleEvent);
 		}
 		
 		private function handleTriggered(event:SampleViewEvent):void
